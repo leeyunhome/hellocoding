@@ -25,63 +25,94 @@ namespace Deep10_2
 
                 int num = int.Parse(Console.ReadLine());
 
-                if (target == 1)
+                if (target - num == 2 || num - target == 2)
                 {
-                    if (num == 2)
+                    if (target < num)
+                    {
+                        Console.WriteLine("졌습니다.");
+                        break;
+                    }
+                    else
                     {
                         Console.WriteLine("이겼습니다.");
                         break;
                     }
-                    else if (num == 3)
-                    {
-                        Console.WriteLine("졌습니다.");
-                        Console.Write("컴퓨터가 낸 것: ");
-                        Console.WriteLine(target);
-                        break;
-                    }
-                    else //if (num == 1)
-                    {
-                        Console.WriteLine("비겼습니다.");
-                    }
                 }
-                else if (target == 2)
+                else
                 {
-                    if (num == 1)
-                    {
-                        Console.WriteLine("졌습니다.");
-                        Console.Write("컴퓨터가 낸 것: ");
-                        Console.WriteLine(target);
-                        break;
-                    }
-                    else if (num == 3)
+                    if (target < num)
                     {
                         Console.WriteLine("이겼습니다.");
                         break;
                     }
-                    else //if (num == 2)
-                    {
-                        Console.WriteLine("비겼습니다.");
-                    }
-                }
-                else if (target == 3)
-                {
-                    if (num == 1)
-                    {
-                        Console.WriteLine("이겼습니다.");
-                        break;
-                    }
-                    else if (num == 2)
+                    if (num < target)
                     {
                         Console.WriteLine("졌습니다.");
-                        Console.Write("컴퓨터가 낸 것: ");
-                        Console.WriteLine(target);
                         break;
                     }
-                    else //if (num == 3)
+                    if (num == target)
                     {
                         Console.WriteLine("비겼습니다.");
                     }
+                    
                 }
+                //if (target == 1)
+                //{
+                //    if (num == 2)
+                //    {
+                //        Console.WriteLine("이겼습니다.");
+                //        break;
+                //    }
+                //    else if (num == 3)
+                //    {
+                //        Console.WriteLine("졌습니다.");
+                //        Console.Write("컴퓨터가 낸 것: ");
+                //        Console.WriteLine(target);
+                //        break;
+                //    }
+                //    else //if (num == 1)
+                //    {
+                //        Console.WriteLine("비겼습니다.");
+                //    }
+                //}
+                //else if (target == 2)
+                //{
+                //    if (num == 1)
+                //    {
+                //        Console.WriteLine("졌습니다.");
+                //        Console.Write("컴퓨터가 낸 것: ");
+                //        Console.WriteLine(target);
+                //        break;
+                //    }
+                //    else if (num == 3)
+                //    {
+                //        Console.WriteLine("이겼습니다.");
+                //        break;
+                //    }
+                //    else //if (num == 2)
+                //    {
+                //        Console.WriteLine("비겼습니다.");
+                //    }
+                //}
+                //else if (target == 3)
+                //{
+                //    if (num == 1)
+                //    {
+                //        Console.WriteLine("이겼습니다.");
+                //        break;
+                //    }
+                //    else if (num == 2)
+                //    {
+                //        Console.WriteLine("졌습니다.");
+                //        Console.Write("컴퓨터가 낸 것: ");
+                //        Console.WriteLine(target);
+                //        break;
+                //    }
+                //    else //if (num == 3)
+                //    {
+                //        Console.WriteLine("비겼습니다.");
+                //    }
+                //}
             }
         }
     }
