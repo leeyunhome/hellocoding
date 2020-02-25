@@ -26,71 +26,59 @@ namespace UltimateBaseball
 
             while (true)
             {
-                Console.WriteLine("> 첫 번째 숫자를 입력하세요.");
-                guesses[0] = int.Parse(Console.ReadLine());
-                Console.WriteLine("> 두 번째 숫자를 입력하세요.");
-                guesses[1] = int.Parse(Console.ReadLine());
-                Console.WriteLine("> 세 번째 숫자를 입력하세요.");
-                guesses[2] = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("> 공격수가 고른 숫자");
-                Console.WriteLine(guesses[0]);
-                Console.WriteLine(guesses[1]);
-                Console.WriteLine(guesses[2]);
+                for (int count = 0; count < 3; count++)
+                {
+                    Console.Write(count + 1);
+                    Console.WriteLine(" 번째 숫자를 입력하세요.");
+                    guesses[count] = int.Parse(Console.ReadLine());
+                }
 
                 if (guesses[0] == guesses[1] || guesses[0] == guesses[2] || guesses[1] == guesses[2])
                 {
                     Console.WriteLine("같은 숫자를 입력하면 안 됩니다.");
                     continue;
                 }
-                else
+
+                Console.WriteLine("> 공격수가 고른 숫자");
+                for (int count = 0; count < 3; count++)
                 {
-                    int strikeCount = 0;
-                    int ballCount = 0;
+                    Console.WriteLine(guesses[count]);
+                }
 
-                    if (guesses[0] == numbers[0])
+                int strikeCount = 0;
+                int ballCount = 0;
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
                     {
-                        strikeCount = strikeCount + 1;
-                    }
-                    else if (guesses[0] == numbers[1] || guesses[0] == numbers[2])
-                    {
-                        ballCount = ballCount + 1;
-                    }
-
-                    if (guesses[1] == numbers[1])
-                    {
-                        strikeCount = strikeCount + 1;
-                    }
-                    else if (guesses[1] == numbers[0] || guesses[1] == numbers[2])
-                    {
-                        ballCount = ballCount + 1;
-                    }
-
-                    if (guesses[2] == numbers[2])
-                    {
-                        strikeCount = strikeCount + 1;
-                    }
-                    else if (guesses[2] == numbers[0] || guesses[2] == numbers[1])
-                    {
-                        ballCount = ballCount + 1;
-                    }
-
-                    Console.Write("스트라이크: ");
-                    Console.WriteLine(strikeCount);
-                    Console.Write("볼: ");
-                    Console.WriteLine(ballCount);
-                    Console.Write("아웃: ");
-                    Console.WriteLine(3 - strikeCount - ballCount);
-
-                    if (guesses[0] == numbers[0] && guesses[1] == numbers[1] &&
-                        guesses[2] == numbers[2])
-                    {
-                        Console.WriteLine("정답입니다!");
-                        break;
+                        if (guesses[i] == numbers[j])
+                        {
+                            if (i == j)
+                            {
+                                strikeCount = strikeCount + 1;
+                            }
+                            else
+                            {
+                                ballCount = ballCount + 1;
+                            }
+                        }
                     }
                 }
-            
+
+                Console.Write("스트라이크: ");
+                Console.WriteLine(strikeCount);
+                Console.Write("볼: ");
+                Console.WriteLine(ballCount);
+                Console.Write("아웃: ");
+                Console.WriteLine(3 - strikeCount - ballCount);
+
+                if (strikeCount == 3)
+                {
+                    Console.WriteLine("정답입니다!");
+                    break;
+                }
             }
+            
         }
     }
 }
