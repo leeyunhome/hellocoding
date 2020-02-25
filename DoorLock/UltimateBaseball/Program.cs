@@ -18,19 +18,28 @@ namespace UltimateBaseball
 
             Console.WriteLine("> 수비수가 고른 숫자");
             int[] numbers = { 3, 1, 9 };
-            Console.WriteLine(numbers[0]);
-            Console.WriteLine(numbers[1]);
-            Console.WriteLine(numbers[2]);
+
+            for (int i = 0; i < 3; ++i)
+            {
+                Console.WriteLine(numbers[i]);
+            }
 
             int[] guesses = new int[3];
+            string[] inputMessages = { "> 첫 번째 숫자를 입력하세요.", "> 두 번째 숫자를 입력하세요.",
+                "> 세 번째 숫자를 입력하세요." };
 
             while (true)
             {
-                for (int count = 0; count < 3; count++)
+                for (int i = 0; i < 3; i++)
                 {
-                    Console.Write(count + 1);
-                    Console.WriteLine(" 번째 숫자를 입력하세요.");
-                    guesses[count] = int.Parse(Console.ReadLine());
+                    Console.WriteLine(inputMessages[i]);
+                    guesses[i] = int.Parse(Console.ReadLine());
+                }
+                
+                Console.WriteLine("> 공격수가 고른 숫자");
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.WriteLine(guesses[i]);
                 }
 
                 if (guesses[0] == guesses[1] || guesses[0] == guesses[2] || guesses[1] == guesses[2])
@@ -39,14 +48,10 @@ namespace UltimateBaseball
                     continue;
                 }
 
-                Console.WriteLine("> 공격수가 고른 숫자");
-                for (int count = 0; count < 3; count++)
-                {
-                    Console.WriteLine(guesses[count]);
-                }
 
                 int strikeCount = 0;
                 int ballCount = 0;
+
                 for (int i = 0; i < 3; i++)
                 {
                     for (int j = 0; j < 3; j++)
