@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorLock", "DoorLock\DoorLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateBaseball", "UltimateBaseball\UltimateBaseball.csproj", "{58C5B7BD-86DE-4751-B74B-5832FA4563D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{A3E6DDFC-5DAF-4339-A249-60624C92C4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter6_6_2", "Chapter6_6_2\Chapter6_6_2.csproj", "{7CD4C4ED-4A9C-43D7-B2E0-E1E89428E385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{58C5B7BD-86DE-4751-B74B-5832FA4563D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58C5B7BD-86DE-4751-B74B-5832FA4563D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58C5B7BD-86DE-4751-B74B-5832FA4563D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E6DDFC-5DAF-4339-A249-60624C92C4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E6DDFC-5DAF-4339-A249-60624C92C4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E6DDFC-5DAF-4339-A249-60624C92C4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E6DDFC-5DAF-4339-A249-60624C92C4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD4C4ED-4A9C-43D7-B2E0-E1E89428E385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD4C4ED-4A9C-43D7-B2E0-E1E89428E385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD4C4ED-4A9C-43D7-B2E0-E1E89428E385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD4C4ED-4A9C-43D7-B2E0-E1E89428E385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
