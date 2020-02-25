@@ -16,13 +16,36 @@ namespace UltimateBaseball
             Console.WriteLine("| 숫자가 틀리면 아웃입니다.                       |");
             Console.WriteLine("+---------------------------------------------+");
 
-            Console.WriteLine("> 수비수가 고른 숫자");
-            int[] numbers = { 3, 1, 9 };
+            Random random = new Random();
+            int[] numbers = new int[3];
 
-            for (int i = 0; i < 3; ++i)
+            int index = 0;
+            while (index < 3)
             {
-                Console.WriteLine(numbers[i]);
+                numbers[index] = random.Next(0, 10);
+
+                bool isSameNumber = false;
+                for (int j = 0; j < index; j++)
+                {
+                    if (numbers[index] == numbers[j])
+                    {
+                        isSameNumber = true;
+                        break;
+                    }
+                }
+
+                if (!isSameNumber)
+                {
+                    index++;
+                }
             }
+
+            //Console.WriteLine("> 수비수가 고른 숫자");
+
+            //for (int i = 0; i < 3; ++i)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
 
             int[] guesses = new int[3];
             string[] inputMessages = { "> 첫 번째 숫자를 입력하세요.", "> 두 번째 숫자를 입력하세요.",
