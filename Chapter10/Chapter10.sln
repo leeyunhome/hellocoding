@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorLock_6Num_Random", "Doo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoNumberGenerator", "LottoNumberGenerator\LottoNumberGenerator.csproj", "{E2FFF1A6-EEAA-4A2A-97A5-EED729D489E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deep10_1", "Deep10_1\Deep10_1.csproj", "{7CD19B68-9735-476D-AEF8-B79BEE46BE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deep10_2", "Deep10_2\Deep10_2.csproj", "{AB9CBCFB-C47A-4233-BA8A-8978D8DF05D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{E2FFF1A6-EEAA-4A2A-97A5-EED729D489E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2FFF1A6-EEAA-4A2A-97A5-EED729D489E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2FFF1A6-EEAA-4A2A-97A5-EED729D489E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD19B68-9735-476D-AEF8-B79BEE46BE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD19B68-9735-476D-AEF8-B79BEE46BE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD19B68-9735-476D-AEF8-B79BEE46BE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD19B68-9735-476D-AEF8-B79BEE46BE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9CBCFB-C47A-4233-BA8A-8978D8DF05D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9CBCFB-C47A-4233-BA8A-8978D8DF05D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9CBCFB-C47A-4233-BA8A-8978D8DF05D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9CBCFB-C47A-4233-BA8A-8978D8DF05D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
